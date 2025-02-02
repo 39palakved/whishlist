@@ -1,0 +1,291 @@
+/* Reset some basic styles */
+/* Reset body and html margin and padding */
+/* Reset body and html margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top vertically */
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Main container */
+.mycontainer {
+  text-align: center;
+  margin-top: 50px; /* Adjust top space */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: auto;
+  max-width: 900px; /* Set max width for large screens */
+  margin: 50px auto; /* Center on the page */
+}
+
+/* Heading styles */
+.heading1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Add button styles */
+.add-button {
+  background-color: #ff6b81;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover and active button effects */
+.add-button:hover {
+  background-color: #ff3b5b;
+  transform: translateY(-3px);
+}
+
+.add-button:active {
+  background-color: #ff1a3d;
+  transform: translateY(1px);
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin: 0 auto; /* Center the form container */
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form element styles */
+.form label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Input focus effects */
+.form input:focus, .form textarea:focus {
+  border-color: #ff6b81;
+}
+
+/* Checkbox styling */
+.form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Button styling */
+.form button {
+  background-color: #ff6b81;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form button:hover {
+  background-color: #ff3b5b;
+  transform: translateY(-3px);
+}
+
+.form button:active {
+  background-color: #ff1a3d;
+  transform: translateY(1px);
+}
+
+/* Body and general styles */
+
+/* Container for the page */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Wishlist title */
+.wishlist-title {
+  font-size: 2em;
+  color: #ff6b81;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.wishlist-table {
+  width: 100%;
+  border-collapse: collapse; /* Makes table borders merge */
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wishlist-table th,
+.wishlist-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.wishlist-table th {
+  background-color: #f1f1f1;
+  color: #555;
+  font-weight: bold;
+}
+
+.wishlist-table td {
+  background-color: #fafafa;
+}
+
+.wishlist-table img {
+  width: 100px;  /* Fixed width for images */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Hover effect for table rows */
+.wishlist-table tr:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.myclass {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Mobile-first styles (max-width: 600px) --- */
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  body, html {
+      height: auto; /* Allow content to grow vertically */
+      margin: 0;
+      padding: 0;
+  }
+
+  /* Center container and provide some padding */
+  .mycontainer {
+      margin-top: 20px;
+      padding: 15px 10px;
+  }
+
+  /* Heading styles for smaller devices */
+  .heading1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+
+  /* Adjust button size for mobile */
+  .add-button {
+      font-size: 16px;
+      padding: 12px 25px;
+  }
+
+  /* Form container styles */
+  .form-container {
+      padding: 20px;
+      width: 90%; /* Use most of the screen space */
+      max-width: 100%; /* Ensure it fits on mobile screens */
+  }
+
+  .form input, .form textarea {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  /* Table styling adjustments */
+  .wishlist-title {
+      font-size: 1.5em;
+  }
+
+  .wishlist-table th, .wishlist-table td {
+      padding: 10px;
+  }
+
+  .wishlist-table img {
+      width: 80px;
+      height: 80px;
+  }
+
+  /* Adjust checkboxes for mobile */
+  .form input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+  }
+
+  .form button {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+
+  /* Adjust the table for smaller screens */
+  .wishlist-table th, .wishlist-table td {
+      font-size: 14px; /* Smaller font size for mobile devices */
+  }
+}
+
+/* --- Tablet styles (max-width: 900px) --- */
+
+/* Tablet Styles */
+@media (max-width: 900px) {
+  .mycontainer {
+      padding: 30px 15px;
+  }
+
+  .wishlist-table th, .wishlist-table td {
+      padding: 12px;
+  }
+
+  .wishlist-table img {
+      width: 90px;
+      height: 90px;
+  }
+
+  .wishlist-title {
+      font-size: 1.8em;
+  }
+}
